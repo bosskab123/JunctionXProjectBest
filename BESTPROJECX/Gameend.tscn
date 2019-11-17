@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://font/neuropol x rg.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Result.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = ExtResource( 1 )
+
+[node name="Gameend" type="Control"]
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1022.0
+margin_bottom = 596.0
+
+[node name="Title" type="Label" parent="."]
+margin_left = 190.452
+margin_top = 77.3265
+margin_right = 808.452
+margin_bottom = 218.327
+custom_fonts/font = SubResource( 1 )
+text = "Game Ended"
+
+[node name="Result" type="Label" parent="."]
+margin_left = 142.776
+margin_top = 273.711
+margin_right = 838.776
+margin_bottom = 400.711
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Player 1 wins"
+script = ExtResource( 2 )
